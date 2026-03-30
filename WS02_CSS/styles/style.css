@@ -1,0 +1,77 @@
+
+
+p {
+      color: rgb(0, 0, 0);
+      font-size: 14px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    body {
+      background-color: rgb(252, 254, 253);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    h1 {
+      font-size: 2em;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+    .content-box {
+  padding: 40px;
+  margin: 50px;
+  background-color: #ffffff;
+  border: 20px solid #e2cefd;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 5px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    
+    th {
+      background-color: #e2cefd;
+      
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"], input[type="email"] {
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    input[type="submit"] {
+      background-color: #e2cefd;
+      color: rgb(0, 0, 0);
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #75599a;
+    }
