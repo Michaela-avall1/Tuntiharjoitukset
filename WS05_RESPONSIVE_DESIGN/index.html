@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My First HTML Page</title>
+
+  
+
+<link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+
+    <header>
+    <h1 style="color: rgb(89, 77, 137);">Welcome to my page</h1>
+
+</header>
+<main>
+    <div class="responsive-nav">
+         <button class="menu-toggle">☰ Menu</button>
+         <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#myhobbies">My Hobbies</a></li>
+            <li><a href="#runningdistances">Running Distances</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+    </div>
+
+    <div class="container">
+    <div class="side">
+        <h2>About Me</h2>
+        <p>Hello! My name is Michaela, and I live in Tuusula, Finland. </p> 
+        <p>I love travelling, being out in nature and spending time with my husband and our two poodles. Currently I'm studying in Laurea a BBA degree in Business IT.</p>
+        <img src="./images/Main picture.jpg" alt="Person standing on a mountain trail holding trekking poles, wearing athletic gear and looking out over a lush green valley with dramatic sun rays and a snow-capped mountain in the background. The scene feels adventurous and inspiring." class="responsive-image">
+        
+    <blockquote class="quote">
+        Oh, the Places You'll Go! You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.
+      </blockquote>
+    </div>
+
+    <div class="main">
+    <div class="content-box">
+        <h2>My Hobbies</h2>
+         <p>I have listed here my main hobbies, that I enjoy doing whenever I have the possibility.</p>
+       
+<ul class="pseudo-list" style="font-size: 14px;">
+        <li>Trail running</li>
+        <li>Cycling</li>
+        <li>Going to the gym</li>
+        <li>Spending time with my family</li>
+    </ul>
+    <img src="./images/My friends.jpg" alt="Responsive " class="responsive-image">
+        
+    </div>  
+
+<div class="content-box">  
+<h2>Favourite website</h2>
+<p>Trainingpeaks is a great resource for tracking my training progress.</p>
+    <a href="https://www.trainingpeaks.com/">Trainingpeaks</a>
+</div>
+   
+<div class="content-box">
+<h2>Running distances</h2>
+<p>This is a table of my ultrarunning history.</p>
+    
+     <table>
+    <tr>
+        <th>Year</th>
+        <th>Distance</th>
+        <th>Event</th>
+        <th>Time</th>
+    </tr>
+    <tr>
+        <td>2021</td>
+        <td>65 km</td>
+        <td>Vaarojen Maraton</td>
+        <td>9:44:59</td>
+    </tr>
+    <tr>
+        <td>2022</td>
+        <td>100 km</td>
+        <td>NUTS-Ylläs-Pallas</td>
+        <td>14:38:36</td>
+    </tr>
+    <tr>
+        <td>2023</td>
+        <td>165 km</td>
+        <td>NUTS-Ylläs-Pallas</td>
+        <td>29:46:39</td>
+    </tr>
+    </table>
+</div>
+</div> 
+</div> 
+</main>
+
+<div class="responsive-box"> 
+    <div class="media-query-box">Resize the window to see the effect</div>
+
+<section id="contact"> 
+<h2>Want to message me?</h2>
+<p>Fill in this form and hit submit to get in touch!</p>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Submit">
+    </form>
+</section>
+</div>
+
+
+<footer>
+  <p> &copy; Copyright 2026 Michaela Åvall</p>
+</footer>
+
+</body>
+</html>
