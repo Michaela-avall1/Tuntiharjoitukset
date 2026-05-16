@@ -1,0 +1,269 @@
+:root {
+  --primary: #4C8A3F;
+  --secondary: #A3D9A5;
+  --accent: #75A94A;   
+  --neutral: #e8f8d9;
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+  --font: "Segoe UI", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  background-color: var(--neutral);
+  font-family: var(--font);
+  margin: 0;
+  line-height: 1.7;
+  padding-bottom: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary);
+}
+
+a {
+  color: var(--primary); 
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.responsive-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  background-color: var(--primary);
+  padding: 14px 0;
+}
+
+.responsive-nav .nav-list {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+    }
+
+.responsive-nav a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.responsive-nav a:hover {
+  color: var(--secondary);
+}
+
+.menu-toggle {
+  display: none;
+  background-color: var(--secondary);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--primary);
+}
+    
+    @media (max-width: 600px) {
+      .responsive-nav .nav-list {
+        display: none;
+      }
+    
+      .responsive-nav .menu-toggle {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+.hero, header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  background: var(--neutral);
+}
+
+.hero-content {
+  max-width: 2000px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  background: var(--primary);
+  color: white !important;
+  padding: 14px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.hero-logo {
+  width: 260px;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15));
+}
+
+.responsive-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  margin: 24px auto;
+  max-width: 1000px;
+  background: var(--neutral);  
+  border: 2px solid var(--secondary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.responsive-box:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  background: var(--neutral);
+  border: 2px solid var(--secondary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 14px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+}
+
+input[type="submit"] {
+  background-color: var(--secondary);
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 60px auto;
+  padding: 20px;
+  background: var(--neutral);
+  border: 2px solid var(--secondary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.slideshow-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 14px 18px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  font-weight: bold;
+  transition: 0.6s ease;
+}
+
+.prev {
+  left: 20px;
+}
+.next {
+  right: 20px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background: var(--primary);
+  border-top: 2px solid var(--secondary);
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}

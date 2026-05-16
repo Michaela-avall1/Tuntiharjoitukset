@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tessa's Garden</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <nav class="responsive-nav">
+      <button class="menu-toggle">☰ Menu</button>
+      <ul class="nav-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./basics.html">Start Your Garden</a></li>
+        <li><a href="./guides.html">What to Grow</a></li>
+        <li><a href="./calendar.html">The Planting Calendar</a></li>
+        <li><a href="./contact.html">Ask the Gardener</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Grow with joy - guided by Tessa</h1>
+        <p>
+          Grow your own food with simple guides, seasonal tips, and a little
+          help from a gardening poodle.
+        </p>
+        <a href="./basics.html" class="hero-btn">Start Gardening</a>
+      </div>
+      <img
+        src="./images/Logo_small.png"
+        alt="Tessa's Garden Logo"
+        class="hero-logo"
+      />
+    </section>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="responsive-box">
+            <img
+              src="./images/Basics_logo.png"
+              alt="Beginner's Guide"
+              class="img-fluid"
+            />
+            <h2><a href="./basics.html">Where to Start?</a></h2>
+            <p>
+              Explore the beginner's basics and start with simple, friendly
+              guides.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="responsive-box">
+            <img
+              src="./images/Guide_logo.png"
+              alt="What to Grow"
+              class="img-fluid"
+            />
+            <h2><a href="./guides.html">What to Grow?</a></h2>
+            <p>Learn how to grow tomatoes, herbs, potatoes, and more.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="responsive-box">
+            <img
+              src="./images/Calendar_logo.png"
+              alt="Planting Calendar"
+              class="img-fluid"
+            />
+            <h2><a href="./calendar.html">When to do What?</a></h2>
+            <p>Know exactly when to start and what to plant each month.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="responsive-box">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img
+            src="./images/Tessa_main.jpg"
+            class="img-fluid rounded shadow-sm"
+            alt="Tessa the poodle"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2>Meet Tessa</h2>
+          <p>
+            Tessa is a miniature poodle with a passion for gardening. She
+            inspects every plant, digs “helpful” holes, and makes sure the
+            tomatoes get enough sunshine. This site is named in her honor —
+            because every great garden deserves a great mascot.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="slideshow-container">
+      <h1>Tessa's Green Gallery</h1>
+      <div class="mySlides">
+        <img
+          src="./images/Slideshow_1.jpg"
+          alt="Fresh vegetables in a basket"
+          style="width: 100%"
+        />
+      </div>
+      <div class="mySlides">
+        <img
+          src="./images/Slideshow_2.jpg"
+          alt="Two people working with a blue tractor pulling planting equipment across freshly tilled rows in a bright spring field"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides">
+        <img
+          src="./images/Slideshow_3.jpg"
+          alt="Tomato plants in a garden"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides">
+        <img
+          src="./images/Slideshow_4.jpg"
+          alt="Vegetables in a pot"
+          style="width: 100%"
+        />
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; Copyright 2026 Michaela Åvall</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS.js"></script>
+  </body>
+</html>
